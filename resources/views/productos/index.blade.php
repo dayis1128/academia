@@ -18,7 +18,7 @@
               <p class="card-text">{{$producto->categoria}}</p>
               <p class="card-text">{{$producto->precio}}</p>
               <p class="card-text">{{$producto->inventario}}</p>
-              <a href="/producto/{{$producto->id}}" class="btn btn-success">Ver detalles</a>
+              <a href="/productos/{{$producto->id}}" class="btn btn-success">Ver detalles</a>
             </div>
         </div>
     </div>

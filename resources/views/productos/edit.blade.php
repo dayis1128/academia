@@ -6,28 +6,20 @@
 <br>
 <h3 class="text-center">Editar información del Producto</h3>
 {{--se utiliza el atributo enctype para poder subir archivos--}}
-<form action="/cursos/{{$course->id}}" method="POST" enctype="multipart/form-data">
+<form action="/productos/{{$product->id}}" method="POST" enctype="multipart/form-data">
     @method('PUT')
     @csrf
     <div class="mb-3">
-        <label for="nombrecurso">Modifique el Nombre del Producto</label>
-        <input name="nombre" id="nombrecurso" value="{{$course->nombre}}" type="text" class="form-control">
+        <label for="nombreproducto">Modifique el Nombre del Producto</label>
+        <input name="nombre" id="nombreproducto" value="{{$product->nombre}}" type="text" class="form-control">
     </div>
     <div class="mb-3">
         <label for="descripcion">Modifique la Descripción del Producto</label>
-        <input name="descripcion" id="descripcion" value="{{$course->descripcion}}" type="text" class="form-control">
+        <input name="descripcion" id="descripcion" value="{{$product->descripcion}}" type="text" class="form-control">
     </div>
     <div class="mb-3">
-        <label for="descripcion">Modifique la Categoria del Producto</label>
-        <input name="descripcion" id="categoria" value="{{$course->categoria}}" type="text" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label for="descripcion">Modifique la Precio del Producto</label>
-        <input name="descripcion" id="precio" value="{{$course->precio}}" type="text" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label for="descripcion">Modifique la Inventario del Producto</label>
-        <input name="descripcion" id="inventario" value="{{$course->inventario}}" type="text" class="form-control">
+        <label for="categoria">Modifique la Descripción del Producto</label>
+        <input name="categoria" id="categoria" value="{{$product->categoria}}" type="text" class="form-control">
     </div>
     <div class="mb-3">
         <label for="imagen">Cargar nueva imagen</label>
